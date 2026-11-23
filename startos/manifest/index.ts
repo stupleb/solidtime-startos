@@ -13,11 +13,11 @@ export const manifest = setupManifest({
   volumes: ['startos', 'db', 'storage'],
   images: {
     solidtime: {
-      source: { dockerTag: 'solidtime/solidtime:0.22.1' },
+      source: { dockerTag: 'solidtime/solidtime:0.23.0' },
       arch: ['x86_64', 'aarch64'],
     },
     postgres: {
-      source: { dockerTag: 'postgres:17.11-alpine' },
+      source: { dockerTag: 'postgres:17.12-alpine' },
       arch: ['x86_64', 'aarch64'],
     },
     gotenberg: {

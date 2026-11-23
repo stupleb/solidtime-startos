@@ -1,7 +1,7 @@
 # Updating the upstream version
 
 Upstream is the `solidtime/solidtime` image on Docker Hub, tagged with the bare release version
-(`0.22.1`, no `v`). The package also pins a PostgreSQL and a Gotenberg image, which move only
+(`0.23.0`, no `v`). The package also pins a PostgreSQL and a Gotenberg image, which move only
 when they need to.
 
 ## Determining the upstream version
