@@ -51,6 +51,7 @@ export default {
     46: 'Las personas invitadas se registran con el correo al que llegó la invitación de su organización, después de abrir su enlace.',
     47: 'Asigna a la cuenta de administrador una nueva contraseña aleatoria y la muestra.',
     48: 'La cuenta de administrador ya no existe en solidtime',
+    49: 'solidtime no acepta esta dirección de correo',
   },
   de_DE: {
     0: 'Apps verbinden',
@@ -102,6 +103,7 @@ export default {
     46: 'Eingeladene registrieren sich mit der E-Mail, an die ihre Einladung in die Organisation ging, nachdem sie deren Link geöffnet haben.',
     47: 'Gibt dem Admin-Konto ein neues zufälliges Passwort und zeigt es.',
     48: 'Das Admin-Konto existiert in solidtime nicht mehr',
+    49: 'solidtime akzeptiert diese E-Mail-Adresse nicht',
   },
   pl_PL: {
     0: 'Połącz aplikacje',
@@ -153,6 +155,7 @@ export default {
     46: 'Zaproszeni rejestrują się adresem e-mail, na który przyszło zaproszenie do organizacji, po otwarciu linku z zaproszenia.',
     47: 'Nadaje kontu administratora nowe losowe hasło i je pokazuje.',
     48: 'Konto administratora nie istnieje już w solidtime',
+    49: 'solidtime nie akceptuje tego adresu e-mail',
   },
   fr_FR: {
     0: 'Connecter les applications',
@@ -204,5 +207,6 @@ export default {
     46: "Les personnes invitées s'inscrivent avec l'adresse e-mail à laquelle l'invitation de leur organisation a été envoyée, après avoir ouvert son lien.",
     47: "Attribue au compte administrateur un nouveau mot de passe aléatoire et l'affiche.",
     48: "Le compte administrateur n'existe plus dans solidtime",
+    49: "solidtime n'accepte pas cette adresse e-mail",
   },
 } satisfies Record<string, LangDict>

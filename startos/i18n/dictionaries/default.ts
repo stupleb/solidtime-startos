@@ -44,6 +44,7 @@ const dict = {
   'Invited people sign up with the email their organization invitation went to, after opening its link.': 46,
   'Give the admin account a new random password and show it.': 47,
   'The admin account no longer exists in solidtime': 48,
+  'solidtime does not accept this email address': 49,
   'Choose who can create their own solidtime account. The admin account always exists, whatever you choose. solidtime restarts to apply it.': 31,
 
   // init/watchAdmin.ts

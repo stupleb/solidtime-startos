@@ -132,7 +132,9 @@ up in about ten seconds.
   hidden once the account exists. It creates the account with the name and email given (the email
   lowercased, as solidtime stores it) and returns a generated password. The package tracks the
   account by its user id from then on. Run while solidtime is stopped, which is the usual case,
-  the account is created on the next start.
+  the account is created on the next start. An address solidtime's own email check refuses, such
+  as `admin@localhost`, fails the action with "solidtime does not accept this email address"
+  instead.
 - **Reset Admin Password** (`reset-admin-password`) — run it when the admin password is lost. It
   takes no input, generates a new random password for the admin account, and returns it with the
   account's current email. While solidtime runs, the password works at once and other sessions of

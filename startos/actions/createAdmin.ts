@@ -27,7 +27,7 @@ const inputSpec = sdk.InputSpec.of({
     maxLength: 255,
     patterns: [
       {
-        regex: '^[^@\\s]+@[^@\\s]+$',
+        regex: '^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$',
         description: i18n('Must be an email address'),
       },
     ],

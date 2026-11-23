@@ -164,8 +164,10 @@ const php = (code: string) => [
 
 const dbUnavailable = 3
 const adminGone = 4
+const invalidEmail = 5
 
 const applyAdminScript = `
+if (!getenv('ADMIN_USER_ID') && \\Illuminate\\Support\\Facades\\Validator::make(['email' => getenv('ADMIN_EMAIL')], ['email' => ['required', 'email:rfc,strict']])->fails()) exit(${invalidEmail});
 try {
   \\Illuminate\\Support\\Facades\\DB::connection()->getPdo();
   if (!\\Illuminate\\Support\\Facades\\Schema::hasTable('users')) exit(${dbUnavailable});
@@ -211,6 +213,9 @@ export async function applyAdmin(
     timeout: 60_000,
   })
   if (res.exitCode === dbUnavailable) return null
+  if (res.exitCode === invalidEmail) {
+    throw new Error(i18n('solidtime does not accept this email address'))
+  }
   if (res.exitCode === adminGone) {
     throw new Error(i18n('The admin account no longer exists in solidtime'))
   }
